@@ -1,0 +1,16 @@
+F:\Pessoal\Desenvolvimento\GitHub\Patterns\Patterns\Patterns.UI\bin\Debug\netcoreapp2.0\Patterns.UI.deps.json
+F:\Pessoal\Desenvolvimento\GitHub\Patterns\Patterns\Patterns.UI\bin\Debug\netcoreapp2.0\Patterns.UI.runtimeconfig.json
+F:\Pessoal\Desenvolvimento\GitHub\Patterns\Patterns\Patterns.UI\bin\Debug\netcoreapp2.0\Patterns.UI.runtimeconfig.dev.json
+F:\Pessoal\Desenvolvimento\GitHub\Patterns\Patterns\Patterns.UI\bin\Debug\netcoreapp2.0\Patterns.UI.dll
+F:\Pessoal\Desenvolvimento\GitHub\Patterns\Patterns\Patterns.UI\bin\Debug\netcoreapp2.0\Patterns.UI.pdb
+F:\Pessoal\Desenvolvimento\GitHub\Patterns\Patterns\Patterns.UI\obj\Debug\netcoreapp2.0\Patterns.UI.csprojResolveAssemblyReference.cache
+F:\Pessoal\Desenvolvimento\GitHub\Patterns\Patterns\Patterns.UI\obj\Debug\netcoreapp2.0\Patterns.UI.csproj.CoreCompileInputs.cache
+F:\Pessoal\Desenvolvimento\GitHub\Patterns\Patterns\Patterns.UI\obj\Debug\netcoreapp2.0\Patterns.UI.AssemblyInfoInputs.cache
+F:\Pessoal\Desenvolvimento\GitHub\Patterns\Patterns\Patterns.UI\obj\Debug\netcoreapp2.0\Patterns.UI.AssemblyInfo.cs
+F:\Pessoal\Desenvolvimento\GitHub\Patterns\Patterns\Patterns.UI\obj\Debug\netcoreapp2.0\Patterns.UI.dll
+F:\Pessoal\Desenvolvimento\GitHub\Patterns\Patterns\Patterns.UI\obj\Debug\netcoreapp2.0\Patterns.UI.pdb
+F:\Pessoal\Desenvolvimento\GitHub\Patterns\Patterns\Patterns.UI\bin\Debug\netcoreapp2.0\Patterns.Aplicacao.dll
+F:\Pessoal\Desenvolvimento\GitHub\Patterns\Patterns\Patterns.UI\bin\Debug\netcoreapp2.0\Patterns.Criacao.dll
+F:\Pessoal\Desenvolvimento\GitHub\Patterns\Patterns\Patterns.UI\bin\Debug\netcoreapp2.0\Patterns.Criacao.pdb
+F:\Pessoal\Desenvolvimento\GitHub\Patterns\Patterns\Patterns.UI\bin\Debug\netcoreapp2.0\Patterns.Aplicacao.pdb
+F:\Pessoal\Desenvolvimento\GitHub\Patterns\Patterns\Patterns.UI\obj\Debug\netcoreapp2.0\Patterns.UI.csproj.CopyComplete

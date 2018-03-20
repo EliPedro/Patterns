@@ -1,0 +1,12 @@
+F:\Pessoal\Desenvolvimento\GitHub\Patterns\Patterns\Patterns.Criacao\bin\Debug\netstandard2.0\Patterns.Criacao.deps.json
+F:\Pessoal\Desenvolvimento\GitHub\Patterns\Patterns\Patterns.Criacao\bin\Debug\netstandard2.0\Patterns.Criacao.dll
+F:\Pessoal\Desenvolvimento\GitHub\Patterns\Patterns\Patterns.Criacao\bin\Debug\netstandard2.0\Patterns.Criacao.pdb
+F:\Pessoal\Desenvolvimento\GitHub\Patterns\Patterns\Patterns.Criacao\obj\Debug\netstandard2.0\Patterns.Criacao.csprojResolveAssemblyReference.cache
+F:\Pessoal\Desenvolvimento\GitHub\Patterns\Patterns\Patterns.Criacao\obj\Debug\netstandard2.0\Patterns.Criacao.csproj.CoreCompileInputs.cache
+F:\Pessoal\Desenvolvimento\GitHub\Patterns\Patterns\Patterns.Criacao\obj\Debug\netstandard2.0\Patterns.Criacao.AssemblyInfoInputs.cache
+F:\Pessoal\Desenvolvimento\GitHub\Patterns\Patterns\Patterns.Criacao\obj\Debug\netstandard2.0\Patterns.Criacao.AssemblyInfo.cs
+F:\Pessoal\Desenvolvimento\GitHub\Patterns\Patterns\Patterns.Criacao\obj\Debug\netstandard2.0\Patterns.Criacao.dll
+F:\Pessoal\Desenvolvimento\GitHub\Patterns\Patterns\Patterns.Criacao\obj\Debug\netstandard2.0\Patterns.Criacao.pdb
+F:\Pessoal\Desenvolvimento\GitHub\Patterns\Patterns\Patterns.Criacao\bin\Debug\netstandard2.0\Patterns.Aplicacao.dll
+F:\Pessoal\Desenvolvimento\GitHub\Patterns\Patterns\Patterns.Criacao\bin\Debug\netstandard2.0\Patterns.Aplicacao.pdb
+F:\Pessoal\Desenvolvimento\GitHub\Patterns\Patterns\Patterns.Criacao\obj\Debug\netstandard2.0\Patterns.Criacao.csproj.CopyComplete

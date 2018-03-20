@@ -1,0 +1,49 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.0",
+    "signature": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.0": {
+      "Patterns.UI/1.0.0": {
+        "dependencies": {
+          "Patterns.Criacao": "1.0.0"
+        },
+        "runtime": {
+          "Patterns.UI.dll": {}
+        }
+      },
+      "Patterns.Aplicacao/1.0.0": {
+        "runtime": {
+          "Patterns.Aplicacao.dll": {}
+        }
+      },
+      "Patterns.Criacao/1.0.0": {
+        "dependencies": {
+          "Patterns.Aplicacao": "1.0.0"
+        },
+        "runtime": {
+          "Patterns.Criacao.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Patterns.UI/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Patterns.Aplicacao/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Patterns.Criacao/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

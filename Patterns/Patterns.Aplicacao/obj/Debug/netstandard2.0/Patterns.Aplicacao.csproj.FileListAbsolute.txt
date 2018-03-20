@@ -1,0 +1,9 @@
+F:\Pessoal\Desenvolvimento\GitHub\Patterns\Patterns\Patterns.Aplicacao\bin\Debug\netstandard2.0\Patterns.Aplicacao.deps.json
+F:\Pessoal\Desenvolvimento\GitHub\Patterns\Patterns\Patterns.Aplicacao\bin\Debug\netstandard2.0\Patterns.Aplicacao.dll
+F:\Pessoal\Desenvolvimento\GitHub\Patterns\Patterns\Patterns.Aplicacao\bin\Debug\netstandard2.0\Patterns.Aplicacao.pdb
+F:\Pessoal\Desenvolvimento\GitHub\Patterns\Patterns\Patterns.Aplicacao\obj\Debug\netstandard2.0\Patterns.Aplicacao.csprojResolveAssemblyReference.cache
+F:\Pessoal\Desenvolvimento\GitHub\Patterns\Patterns\Patterns.Aplicacao\obj\Debug\netstandard2.0\Patterns.Aplicacao.csproj.CoreCompileInputs.cache
+F:\Pessoal\Desenvolvimento\GitHub\Patterns\Patterns\Patterns.Aplicacao\obj\Debug\netstandard2.0\Patterns.Aplicacao.AssemblyInfoInputs.cache
+F:\Pessoal\Desenvolvimento\GitHub\Patterns\Patterns\Patterns.Aplicacao\obj\Debug\netstandard2.0\Patterns.Aplicacao.AssemblyInfo.cs
+F:\Pessoal\Desenvolvimento\GitHub\Patterns\Patterns\Patterns.Aplicacao\obj\Debug\netstandard2.0\Patterns.Aplicacao.dll
+F:\Pessoal\Desenvolvimento\GitHub\Patterns\Patterns\Patterns.Aplicacao\obj\Debug\netstandard2.0\Patterns.Aplicacao.pdb
