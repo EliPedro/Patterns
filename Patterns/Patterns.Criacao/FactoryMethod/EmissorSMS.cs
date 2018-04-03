@@ -13,7 +13,8 @@ namespace Patterns.Criacao.FactoryMethod
 
         public async Task EnviarMensagemAsync()
         {
-            await Task.Run(() => {
+            await Task.Run(() =>
+            {
                 Console.WriteLine("Enviando SMS de forma assíncrona!!");
             });
         }

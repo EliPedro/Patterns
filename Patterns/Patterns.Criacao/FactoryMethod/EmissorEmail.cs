@@ -10,9 +10,11 @@ namespace Patterns.Criacao.FactoryMethod
         {
             Console.WriteLine($"Enviando Email de forma síncrona!!");
         }
+
         public async Task EnviarMensagemAsync()
         {
-            await Task.Run(() => {
+            await Task.Run(() =>
+            {
                 Console.WriteLine("Enviando Email de forma assíncrona!!");
             });
         }

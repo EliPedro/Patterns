@@ -13,8 +13,10 @@ namespace Patterns.Criacao.FactoryMethod
             {
                 case TipoEmissor.Email:
                     return new EmissorEmail();
+
                 case TipoEmissor.SMS:
                     return new EmissorSMS();
+
                 default:
                     {
                         throw new NotImplementedException("Opção inválida !!");
@@ -28,8 +30,10 @@ namespace Patterns.Criacao.FactoryMethod
             {
                 case TipoEmissor.Email:
                     return await Task.FromResult(new EmissorEmail());
+
                 case TipoEmissor.SMS:
                     return await Task.FromResult(new EmissorSMS());
+
                 default:
                     {
                         throw new NotImplementedException("Opção inválida !!");

@@ -6,6 +6,7 @@ namespace Patterns.Criacao.FactoryMethod.Interfaces
     public interface IFactoryEmissor
     {
         IEmissor Create(TipoEmissor tipoEmissor);
+
         Task<IEmissor> CreateAsync(TipoEmissor tipoEmissor);
     }
 }
