@@ -3,6 +3,9 @@ using Patterns.Criacao.AbstractFactory;
 using Patterns.Criacao.Build.Boletos;
 using Patterns.Criacao.Builder.Boletos;
 using Patterns.Criacao.FactoryMethod;
+using Patterns.Criacao.Prototype.Campanhas;
+using Patterns.Criacao.Singleton.Configuracoes;
+using Patterns.Criacao.Singleton.Utilitarios;
 using System;
 using System.Threading.Tasks;
 
@@ -12,11 +15,24 @@ namespace Patterns.UI
     {
         private static void Main(string[] args)
         {
-            TestarBuilder();
+            TestarSingleton();
             Console.ReadKey();
         }
 
         #region
+
+        private static void TestarSingleton()
+        {
+            Console.WriteLine(Configuracao.GetInstance().ObterPropriedade(PropriedadesEnum.TimeZone));
+            Console.WriteLine(Configuracao.GetInstance().ObterPropriedade(PropriedadesEnum.CurrencyCode));
+            Console.WriteLine(Configuracao.GetInstance() == Configuracao.GetInstance());
+        }
+
+        private static void TestarPrototype()
+        {
+            Console.WriteLine(new Campanha("Teste", DateTime.Now.AddDays(10), Guid.NewGuid()));
+            Console.WriteLine(new Campanha("Teste", DateTime.Now.AddDays(10), Guid.NewGuid()).Clone());
+        }
 
         private static void TestarBuilder()
         {
