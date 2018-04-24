@@ -3,6 +3,8 @@ using Patterns.Criacao.AbstractFactory;
 using Patterns.Criacao.Build.Boletos;
 using Patterns.Criacao.Builder.Boletos;
 using Patterns.Criacao.FactoryMethod;
+using Patterns.Criacao.Multiton.Temas;
+using Patterns.Criacao.Multiton.Utilitarios;
 using Patterns.Criacao.Prototype.Campanhas;
 using Patterns.Criacao.Singleton.Configuracoes;
 using Patterns.Criacao.Singleton.Utilitarios;
@@ -15,11 +17,27 @@ namespace Patterns.UI
     {
         private static void Main(string[] args)
         {
-            TestarSingleton();
+            TestarMultiton();
             Console.ReadKey();
         }
 
         #region
+
+        private static void TestarMultiton()
+        {
+            var fire = Tema.ObterTema(TemasEnum.Fire);
+            var sky = Tema.ObterTema(TemasEnum.Sky);
+
+            Console.WriteLine();
+            Console.WriteLine(fire.Nome);
+            Console.WriteLine(fire.CorDaFonte);
+            Console.WriteLine(fire.CorDoFundo);
+            Console.WriteLine();
+
+            Console.WriteLine(sky.Nome);
+            Console.WriteLine(sky.CorDaFonte);
+            Console.WriteLine(sky.CorDoFundo);
+        }
 
         private static void TestarSingleton()
         {
