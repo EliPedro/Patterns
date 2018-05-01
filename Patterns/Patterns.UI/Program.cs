@@ -5,10 +5,12 @@ using Patterns.Criacao.Builder.Boletos;
 using Patterns.Criacao.FactoryMethod;
 using Patterns.Criacao.Multiton.Temas;
 using Patterns.Criacao.Multiton.Utilitarios;
+using Patterns.Criacao.ObjectPool;
 using Patterns.Criacao.Prototype.Campanhas;
 using Patterns.Criacao.Singleton.Configuracoes;
 using Patterns.Criacao.Singleton.Utilitarios;
 using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace Patterns.UI
@@ -17,8 +19,30 @@ namespace Patterns.UI
     {
         private static void Main(string[] args)
         {
-            TestarMultiton();
+            TestarObjectPool();
             Console.ReadKey();
+        }
+
+        public static void TestarObjectPool()
+        {
+            var funcionarios = new List<Funcionario>();
+            var pool = new FuncionarioPool();
+
+            for (int i = 0; i < 10; ++i)
+            {
+                funcionarios.Add(new Funcionario($"Nome - {i}"));
+            }
+
+            pool.Release(funcionarios);
+            var func = pool.Acquire();
+
+            while (func != null)
+            {
+                Console.WriteLine(func);
+                func = pool.Acquire();
+            }
+
+            Console.WriteLine();
         }
 
         #region
