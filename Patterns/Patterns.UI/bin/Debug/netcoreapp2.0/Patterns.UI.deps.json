@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v2.0": {
       "Patterns.UI/1.0.0": {
         "dependencies": {
-          "Patterns.Criacao": "1.0.0"
+          "Patterns.Criacao": "1.0.0",
+          "Patterns.Estrutura": "1.0.0"
         },
         "runtime": {
           "Patterns.UI.dll": {}
@@ -26,6 +27,11 @@
         "runtime": {
           "Patterns.Criacao.dll": {}
         }
+      },
+      "Patterns.Estrutura/1.0.0": {
+        "runtime": {
+          "Patterns.Estrutura.dll": {}
+        }
       }
     }
   },
@@ -41,6 +47,11 @@
       "sha512": ""
     },
     "Patterns.Criacao/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Patterns.Estrutura/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

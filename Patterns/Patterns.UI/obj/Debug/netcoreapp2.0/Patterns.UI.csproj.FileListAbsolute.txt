@@ -14,3 +14,5 @@ F:\Pessoal\Desenvolvimento\GitHub\Patterns\Patterns\Patterns.UI\bin\Debug\netcor
 F:\Pessoal\Desenvolvimento\GitHub\Patterns\Patterns\Patterns.UI\bin\Debug\netcoreapp2.0\Patterns.Criacao.pdb
 F:\Pessoal\Desenvolvimento\GitHub\Patterns\Patterns\Patterns.UI\bin\Debug\netcoreapp2.0\Patterns.Aplicacao.pdb
 F:\Pessoal\Desenvolvimento\GitHub\Patterns\Patterns\Patterns.UI\obj\Debug\netcoreapp2.0\Patterns.UI.csproj.CopyComplete
+F:\Pessoal\Desenvolvimento\GitHub\Patterns\Patterns\Patterns.UI\bin\Debug\netcoreapp2.0\Patterns.Estrutura.dll
+F:\Pessoal\Desenvolvimento\GitHub\Patterns\Patterns\Patterns.UI\bin\Debug\netcoreapp2.0\Patterns.Estrutura.pdb

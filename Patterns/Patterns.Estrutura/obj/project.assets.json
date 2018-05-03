@@ -196,39 +196,6 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
-      },
-      "Patterns.Aplicacao/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "compile": {
-          "bin/placeholder/Patterns.Aplicacao.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Patterns.Aplicacao.dll": {}
-        }
-      },
-      "Patterns.Criacao/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "Patterns.Aplicacao": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Patterns.Criacao.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Patterns.Criacao.dll": {}
-        }
-      },
-      "Patterns.Estrutura/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v2.0",
-        "compile": {
-          "bin/placeholder/Patterns.Estrutura.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Patterns.Estrutura.dll": {}
-        }
       }
     }
   },
@@ -689,28 +656,11 @@
         "netstandard.library.2.0.0.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
-    },
-    "Patterns.Aplicacao/1.0.0": {
-      "type": "project",
-      "path": "../Patterns.Aplicacao/Patterns.Aplicacao.csproj",
-      "msbuildProject": "../Patterns.Aplicacao/Patterns.Aplicacao.csproj"
-    },
-    "Patterns.Criacao/1.0.0": {
-      "type": "project",
-      "path": "../Patterns.Criacao/Patterns.Criacao.csproj",
-      "msbuildProject": "../Patterns.Criacao/Patterns.Criacao.csproj"
-    },
-    "Patterns.Estrutura/1.0.0": {
-      "type": "project",
-      "path": "../Patterns.Estrutura/Patterns.Estrutura.csproj",
-      "msbuildProject": "../Patterns.Estrutura/Patterns.Estrutura.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
-      "Microsoft.NETCore.App >= 2.0.0",
-      "Patterns.Criacao >= 1.0.0",
-      "Patterns.Estrutura >= 1.0.0"
+      "Microsoft.NETCore.App >= 2.0.0"
     ]
   },
   "packageFolders": {
@@ -720,11 +670,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Pessoal\\Desenvolvimento\\GitHub\\Patterns\\Patterns\\Patterns.UI\\Patterns.UI.csproj",
-      "projectName": "Patterns.UI",
-      "projectPath": "F:\\Pessoal\\Desenvolvimento\\GitHub\\Patterns\\Patterns\\Patterns.UI\\Patterns.UI.csproj",
+      "projectUniqueName": "F:\\Pessoal\\Desenvolvimento\\GitHub\\Patterns\\Patterns\\Patterns.Estrutura\\Patterns.Estrutura.csproj",
+      "projectName": "Patterns.Estrutura",
+      "projectPath": "F:\\Pessoal\\Desenvolvimento\\GitHub\\Patterns\\Patterns\\Patterns.Estrutura\\Patterns.Estrutura.csproj",
       "packagesPath": "C:\\Users\\elipe\\.nuget\\packages\\",
-      "outputPath": "F:\\Pessoal\\Desenvolvimento\\GitHub\\Patterns\\Patterns\\Patterns.UI\\obj\\",
+      "outputPath": "F:\\Pessoal\\Desenvolvimento\\GitHub\\Patterns\\Patterns\\Patterns.Estrutura\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -743,14 +693,7 @@
       },
       "frameworks": {
         "netcoreapp2.0": {
-          "projectReferences": {
-            "F:\\Pessoal\\Desenvolvimento\\GitHub\\Patterns\\Patterns\\Patterns.Criacao\\Patterns.Criacao.csproj": {
-              "projectPath": "F:\\Pessoal\\Desenvolvimento\\GitHub\\Patterns\\Patterns\\Patterns.Criacao\\Patterns.Criacao.csproj"
-            },
-            "F:\\Pessoal\\Desenvolvimento\\GitHub\\Patterns\\Patterns\\Patterns.Estrutura\\Patterns.Estrutura.csproj": {
-              "projectPath": "F:\\Pessoal\\Desenvolvimento\\GitHub\\Patterns\\Patterns\\Patterns.Estrutura\\Patterns.Estrutura.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -763,6 +706,7 @@
       "netcoreapp2.0": {
         "dependencies": {
           "Microsoft.NETCore.App": {
+            "suppressParent": "All",
             "target": "Package",
             "version": "[2.0.0, )",
             "autoReferenced": true

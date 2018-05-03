@@ -9,8 +9,10 @@ using Patterns.Criacao.ObjectPool;
 using Patterns.Criacao.Prototype.Campanhas;
 using Patterns.Criacao.Singleton.Configuracoes;
 using Patterns.Criacao.Singleton.Utilitarios;
+using Patterns.Estrutura.Adapter;
 using System;
 using System.Collections.Generic;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Patterns.UI
@@ -19,9 +21,19 @@ namespace Patterns.UI
     {
         private static void Main(string[] args)
         {
-            TestarObjectPool();
+            TestarAdapter();
             Console.ReadKey();
         }
+
+        private static void TestarAdapter()
+        {
+            var controleAdapter = new ControleDePontoAdapter(new ControleDePontoNovo());
+            controleAdapter.RegistrarEntrada(new Empregado("Teste"));
+            Thread.Sleep(400);
+            controleAdapter.RegistrarSainda(new Empregado("Teste"));
+        }
+
+        #region
 
         public static void TestarObjectPool()
         {
@@ -44,8 +56,6 @@ namespace Patterns.UI
 
             Console.WriteLine();
         }
-
-        #region
 
         private static void TestarMultiton()
         {

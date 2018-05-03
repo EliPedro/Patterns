@@ -1,0 +1,9 @@
+F:\Pessoal\Desenvolvimento\GitHub\Patterns\Patterns\Patterns.Estrutura\bin\Debug\netcoreapp2.0\Patterns.Estrutura.deps.json
+F:\Pessoal\Desenvolvimento\GitHub\Patterns\Patterns\Patterns.Estrutura\bin\Debug\netcoreapp2.0\Patterns.Estrutura.dll
+F:\Pessoal\Desenvolvimento\GitHub\Patterns\Patterns\Patterns.Estrutura\bin\Debug\netcoreapp2.0\Patterns.Estrutura.pdb
+F:\Pessoal\Desenvolvimento\GitHub\Patterns\Patterns\Patterns.Estrutura\obj\Debug\netcoreapp2.0\Patterns.Estrutura.csprojResolveAssemblyReference.cache
+F:\Pessoal\Desenvolvimento\GitHub\Patterns\Patterns\Patterns.Estrutura\obj\Debug\netcoreapp2.0\Patterns.Estrutura.csproj.CoreCompileInputs.cache
+F:\Pessoal\Desenvolvimento\GitHub\Patterns\Patterns\Patterns.Estrutura\obj\Debug\netcoreapp2.0\Patterns.Estrutura.AssemblyInfoInputs.cache
+F:\Pessoal\Desenvolvimento\GitHub\Patterns\Patterns\Patterns.Estrutura\obj\Debug\netcoreapp2.0\Patterns.Estrutura.AssemblyInfo.cs
+F:\Pessoal\Desenvolvimento\GitHub\Patterns\Patterns\Patterns.Estrutura\obj\Debug\netcoreapp2.0\Patterns.Estrutura.dll
+F:\Pessoal\Desenvolvimento\GitHub\Patterns\Patterns\Patterns.Estrutura\obj\Debug\netcoreapp2.0\Patterns.Estrutura.pdb
