@@ -14,6 +14,8 @@ using System;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
+using Patterns.Estrutura.Bridge.Interfaces;
+using Patterns.Estrutura.Bridge;
 
 namespace Patterns.UI
 {
@@ -21,9 +23,18 @@ namespace Patterns.UI
     {
         private static void Main(string[] args)
         {
-            TestarAdapter();
+            TestarBridge();
             Console.ReadKey();
         }
+
+        private static void TestarBridge()
+        {
+            IGeradorDeArquivo geradorDeArquivoTXT = new GeradorDeArquivoTXT();
+            IDocumento recibo = new Recibo("XPTO", "Teste", 1000M, geradorDeArquivoTXT);
+            recibo.GerarArquivo();
+        }
+
+        #region
 
         private static void TestarAdapter()
         {
@@ -32,8 +43,6 @@ namespace Patterns.UI
             Thread.Sleep(400);
             controleAdapter.RegistrarSainda(new Empregado("Teste"));
         }
-
-        #region
 
         public static void TestarObjectPool()
         {
