@@ -16,6 +16,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Patterns.Estrutura.Bridge.Interfaces;
 using Patterns.Estrutura.Bridge;
+using Patterns.Estrutura.Composite;
 
 namespace Patterns.UI
 {
@@ -23,9 +24,32 @@ namespace Patterns.UI
     {
         private static void Main(string[] args)
         {
-            TestarBridge();
+            TesteComposite();
             Console.ReadKey();
         }
+
+        private static void TesteComposite()
+        {
+            var trecho1 = new TrechoAndando("Vá até o cruzamento da Av. Rebouças com a Av. Brigadeiro Faria Lima ", 500);
+            var trecho2 = new TrechoDeCarro("Vá até o cruzamento da Av. Brigadeiro Faria Lima com a Av. Cidade Jardim ", 1500);
+            var trecho3 = new TrechoDeCarro("Vire a direita na Marginal Pinheiros ", 500);
+
+            var caminho1 = new Caminho();
+            caminho1.Adicionar(trecho1);
+            caminho1.Adicionar(trecho2);
+
+            Console.WriteLine(" Caminho 1 : ");
+            caminho1.Imprimir();
+
+            var caminho2 = new Caminho();
+            caminho2.Adicionar(caminho1);
+            caminho2.Adicionar(trecho3);
+            Console.WriteLine(" ---------------");
+            Console.WriteLine(" Caminho 2: ");
+            caminho2.Imprimir();
+        }
+
+        #region
 
         private static void TestarBridge()
         {
@@ -33,8 +57,6 @@ namespace Patterns.UI
             IDocumento recibo = new Recibo("XPTO", "Teste", 1000M, geradorDeArquivoTXT);
             recibo.GerarArquivo();
         }
-
-        #region
 
         private static void TestarAdapter()
         {
