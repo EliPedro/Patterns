@@ -10,13 +10,14 @@ using Patterns.Criacao.Prototype.Campanhas;
 using Patterns.Criacao.Singleton.Configuracoes;
 using Patterns.Criacao.Singleton.Utilitarios;
 using Patterns.Estrutura.Adapter;
+using Patterns.Estrutura.Bridge;
+using Patterns.Estrutura.Bridge.Interfaces;
+using Patterns.Estrutura.Composite;
+using Patterns.Estrutura.Decorator;
 using System;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
-using Patterns.Estrutura.Bridge.Interfaces;
-using Patterns.Estrutura.Bridge;
-using Patterns.Estrutura.Composite;
 
 namespace Patterns.UI
 {
@@ -24,8 +25,26 @@ namespace Patterns.UI
     {
         private static void Main(string[] args)
         {
-            TesteComposite();
+            TestarDecorator();
             Console.ReadKey();
+        }
+
+        private static void TestarDecorator()
+        {
+            var mensagem = "What is Lorem Ipsum ?";
+
+            var emissorCript = new EmissorDecoratorComCriptografia(new EmissorBasico());
+            emissorCript.Envia(mensagem);
+
+            Console.WriteLine();
+
+            var emissorCompr = new EmissorDecoratorComCompressao(new EmissorBasico());
+            emissorCompr.Envia(mensagem);
+
+            Console.WriteLine();
+
+            var emissorCriptCompr = new EmissorDecoratorComCompressao(new EmissorDecoratorComCriptografia(new EmissorBasico()));
+            emissorCriptCompr.Envia(mensagem);
         }
 
         private static void TesteComposite()

@@ -1,5 +1,4 @@
 ﻿using Patterns.Criacao.ObjectPool.Interfaces;
-using System;
 using System.Collections.Generic;
 
 namespace Patterns.Criacao.ObjectPool
