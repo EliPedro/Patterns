@@ -14,6 +14,7 @@ using Patterns.Estrutura.Bridge;
 using Patterns.Estrutura.Bridge.Interfaces;
 using Patterns.Estrutura.Composite;
 using Patterns.Estrutura.Decorator;
+using Patterns.Estrutura.Facade;
 using System;
 using System.Collections.Generic;
 using System.Threading;
@@ -25,9 +26,22 @@ namespace Patterns.UI
     {
         private static void Main(string[] args)
         {
-            TestarDecorator();
+            TestarPedidoFacade();
             Console.ReadKey();
         }
+
+        private static void TestarPedidoFacade()
+        {
+            var estoque = new Estoque();
+            var financeiro = new Financeiro();
+            var posVenda = new PosVenda();
+            var pedido = new Pedido("Notebook ", "Desenvolvedor.Net", "Av.Brigadeiro Faria Lima , 100 , São Paulo , SP");
+            var facade = new PedidoFacade(estoque, financeiro, posVenda);
+
+            facade.RegistrarPedido(pedido);
+        }
+
+        #region
 
         private static void TestarDecorator()
         {
@@ -67,8 +81,6 @@ namespace Patterns.UI
             Console.WriteLine(" Caminho 2: ");
             caminho2.Imprimir();
         }
-
-        #region
 
         private static void TestarBridge()
         {
