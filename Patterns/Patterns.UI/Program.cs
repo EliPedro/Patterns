@@ -43,15 +43,13 @@ namespace Patterns.UI
             + " sólida de conhecimentos de Java \n"
             + "e de Orientação a Objetos ."));
 
-            a.AdicionaSlide(new Slide(TemaFlyweightFactory
-           .ObterTema<TemaAsterisco>(TemaFlyweightEnum.ASTERISCO),
+            a.AdicionaSlide(new Slide(TemaFlyweightFactory.ObterTema<TemaAsterisco>(TemaFlyweightEnum.ASTERISCO),
             " Desenvolvimento Web com JSF2 e JPA2 ",
             " Depois deste curso , você estará apto a\n"
             + " desenvolver aplicações Web com \n"
             + "os padrões da plataforma Java ."));
 
-            a.AdicionaSlide(new Slide(TemaFlyweightFactory
-           .ObterTema<TemaHifen>(TemaFlyweightEnum.HIFEN),
+            a.AdicionaSlide(new Slide(TemaFlyweightFactory.ObterTema<TemaHifen>(TemaFlyweightEnum.HIFEN),
             " Persistência com JPA2 e Hibernate ",
             " Neste curso de Java Avançado , abordamos de\n"
             + " maneira profunda os recursos de persistência \n"

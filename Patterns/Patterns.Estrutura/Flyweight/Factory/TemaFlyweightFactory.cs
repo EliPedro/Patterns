@@ -13,15 +13,9 @@ namespace Patterns.Estrutura.Flyweight.Factory
         {
             if (!temas.ContainsKey(@key))
             {
-                try
-                {
-                    temas.Add(@key, Activator.CreateInstance<T>());
-                }
-                catch (Exception e)
-                {
-                    Console.WriteLine(e.Message);
-                }
+                temas.Add(@key, Activator.CreateInstance<T>());
             }
+
             return temas[@key];
         }
     }

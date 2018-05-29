@@ -13,8 +13,7 @@ namespace Patterns.Estrutura.Flyweight
             char[] rodapeD = new char[(int)Math.Ceiling((6 + titulo.Length) / 2.0)];
             Array.Fill(rodapeE, '#');
             Array.Fill(rodapeD, '#');
-            Console.WriteLine(new String(rodapeE) + " www.microsoft.com" +
-            11 + new String(rodapeD));
+            Console.WriteLine(new String(rodapeE) + " www.java.com " + new String(rodapeD));
         }
     }
 }
