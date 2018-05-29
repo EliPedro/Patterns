@@ -15,6 +15,9 @@ using Patterns.Estrutura.Bridge.Interfaces;
 using Patterns.Estrutura.Composite;
 using Patterns.Estrutura.Decorator;
 using Patterns.Estrutura.Facade;
+using Patterns.Estrutura.Flyweight;
+using Patterns.Estrutura.Flyweight.Enum;
+using Patterns.Estrutura.Flyweight.Factory;
 using System;
 using System.Collections.Generic;
 using System.Threading;
@@ -26,8 +29,47 @@ namespace Patterns.UI
     {
         private static void Main(string[] args)
         {
-            TestarPedidoFacade();
+            TestarFlyweight();
             Console.ReadKey();
+        }
+
+        private static void TestarFlyweight()
+        {
+            Apresentacao a = new Apresentacao();
+
+            a.AdicionaSlide(new Slide(TemaFlyweightFactory.ObterTema<TemaSharp>(TemaFlyweightEnum.SHARP),
+            " Orientação a Objetos em Java ",
+            " Com este curso você vai obter uma base \n"
+            + " sólida de conhecimentos de Java \n"
+            + "e de Orientação a Objetos ."));
+
+            a.AdicionaSlide(new Slide(TemaFlyweightFactory
+           .ObterTema<TemaAsterisco>(TemaFlyweightEnum.ASTERISCO),
+            " Desenvolvimento Web com JSF2 e JPA2 ",
+            " Depois deste curso , você estará apto a\n"
+            + " desenvolver aplicações Web com \n"
+            + "os padrões da plataforma Java ."));
+
+            a.AdicionaSlide(new Slide(TemaFlyweightFactory
+           .ObterTema<TemaHifen>(TemaFlyweightEnum.HIFEN),
+            " Persistência com JPA2 e Hibernate ",
+            " Neste curso de Java Avançado , abordamos de\n"
+            + " maneira profunda os recursos de persistência \n"
+            + "do JPA2 e do Hibernate ."));
+
+            a.Imprime();
+        }
+
+        #region Teste Patterns
+
+        private static void TestarFactoryMethod()
+        {
+            new FactoryEmissor().Create(TipoEmissor.Email).EnviarMensagem();
+        }
+
+        private async static Task TestarFactoryMethodAsync()
+        {
+            await new FactoryEmissor().CreateAsync(TipoEmissor.SMS).Result.EnviarMensagemAsync();
         }
 
         private static void TestarPedidoFacade()
@@ -40,8 +82,6 @@ namespace Patterns.UI
 
             facade.RegistrarPedido(pedido);
         }
-
-        #region
 
         private static void TestarDecorator()
         {
@@ -161,20 +201,6 @@ namespace Patterns.UI
             emissor.Mensagem();
         }
 
-        #endregion
-
-        #region Factory Method
-
-        private static void TestarFactoryMethod()
-        {
-            new FactoryEmissor().Create(TipoEmissor.Email).EnviarMensagem();
-        }
-
-        private async static Task TestarFactoryMethodAsync()
-        {
-            await new FactoryEmissor().CreateAsync(TipoEmissor.SMS).Result.EnviarMensagemAsync();
-        }
-
-        #endregion
+        #endregion Teste Patterns
     }
 }
