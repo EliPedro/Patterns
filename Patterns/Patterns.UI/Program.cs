@@ -18,6 +18,8 @@ using Patterns.Estrutura.Facade;
 using Patterns.Estrutura.Flyweight;
 using Patterns.Estrutura.Flyweight.Enum;
 using Patterns.Estrutura.Flyweight.Factory;
+using Patterns.Estrutura.Proxy;
+using Patterns.Estrutura.Proxy.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Threading;
@@ -29,9 +31,20 @@ namespace Patterns.UI
     {
         private static void Main(string[] args)
         {
-            TestarFlyweight();
+            TestarProxy();
             Console.ReadKey();
         }
+
+        private static void TestarProxy()
+        {
+            IConta contaPadrao = new ContaPadrao();
+            IConta contaProxy = new ContaProxy(contaPadrao);
+            contaProxy.Depositar(100);
+            contaProxy.Sacar(59);
+            Console.WriteLine("Saldo : R$ " + contaProxy.ObterSaldo());
+        }
+
+        #region Teste Patterns
 
         private static void TestarFlyweight()
         {
@@ -57,8 +70,6 @@ namespace Patterns.UI
 
             a.Imprime();
         }
-
-        #region Teste Patterns
 
         private static void TestarFactoryMethod()
         {
